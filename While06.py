@@ -7,3 +7,12 @@ def main(s):
     Returns:
         int: return answer
     """
+    a=0
+    i=0
+    while i<len(s):
+        if s[i].isalpha():
+            if s[i]!="a" and s[i]!="e" and s[i]!="i" and s[i]!="o" and s[i]!="u":
+                a+=1
+        i+=1
+    return a
+print(main("CodeschoolUz"))
